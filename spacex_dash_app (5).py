@@ -68,7 +68,7 @@ def get_pie_chart(entered_site):
             # return the outcomes piechart for a selected site
             fig = px.pie(filtered_df, values='class',
             names='class', 
-            title=('Total Success Launches by Site '+ entered_site))
+            title=f'Total Success Launches by Site {entered_site}')
             return fig
 
 
